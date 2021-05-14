@@ -191,7 +191,7 @@ window.onload = function() {
                     </div> 
                     
            <div class="box8">
-             <p><?php> echo "Funders look carefully at the applicant organization’s history, 
+             <p>Funders look carefully at the applicant organization’s history, 
              leadership and track record. Offer factual and objective descriptions of your 
              organization’s accomplishments, including statistics and examples. Highlight 
              achievements that will be most meaningful to the potential funder. 
@@ -199,7 +199,7 @@ window.onload = function() {
              contributions of your organization. If your organization is new and its track record brief, 
              look to the background of the staff and board of directors to provide credibility, 
              and stress community partnerships to build the funder’s confidence in the new organization’s 
-             ability to achieve results.";?></p>
+             ability to achieve results.</p>
              <a  href="tips.pdf" target="_blank">Some tips</a>
            </div> 
             </main>
