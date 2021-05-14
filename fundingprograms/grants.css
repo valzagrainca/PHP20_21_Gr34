@@ -88,7 +88,7 @@ animation-timing-function: step-end;
 .form-popup {
   display: none;
   position:relative;
-  top:2%;
+  top:-20px;
   left:530px;
   border: 5px solid #f1f1f1;
   z-index: 12;
@@ -110,6 +110,8 @@ padding-left:70px;
   height:630px;
   padding: 10px;
   background-color: white;
+  
+
 }
 
 .form-container input[type=text], .form-container input[type=password] ,.form-container input[type=tel],textarea{
@@ -121,7 +123,7 @@ padding-left:70px;
 }
 
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text]:focus, .form-container input[type=password]:focus,.form-container input[type=tel]:focus,textarea:focus {
   background-color: #ddd;
   outline: none;
 }
