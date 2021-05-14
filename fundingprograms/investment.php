@@ -160,19 +160,32 @@
                 <div class="llojet">
                     <h2>Debt</h2>
                     <p>
-                    A typical SBIC loan ranges from $250,000 to $10 million, with an interest rate between 9% and 16%.
-                </p>
+                    <?php
+                    // Kerkesa e pare me konstante
+                    define("variable", 250000);
+                    echo "A typical SBIC loan ranges from $". variable ." to $10 million,
+                    with an interest rate between 9% and 16%.";
+                    ?>
+                    </p>
             </div> 
                 <div class="llojet">
                     <h2>Equity</h2>
                     <p>
-                    SBICs will invest in your business in exchange for a share of ownership in your company. Typical investments range from $100,000 to $5 million.
-                  </p> 
+                    <?php
+                    /* Kerkesa e pare me variabla. Kom perdor string concatenation qe me printu
+                    simbolin $ */
+                    $variable1 = 100000;
+                    $variable2 = 5;
+                    echo "SBICs will invest in your business in exchange for a share of ownership in
+                    your company. Typical investments range from $".$variable1." to $".$variable2."million.";
+                    ?>
+                    </p>
                 </div> 
                 <div class="llojet">  
              <h2>Debt with equity</h2>
              <p>
-             Financing includes loans and ownership shares. Loan interest rates are typically between 10% and 14%. Investments range from $250,000 to $10 million.
+             Financing includes loans and ownership shares. Loan interest rates are typically between
+             10% and 14%. Investments range from $250000 to $10 million.
                 </p>   
               </div>  
              </div>
