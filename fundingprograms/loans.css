@@ -83,7 +83,7 @@ animation-timing-function: step-end;
 .form-popup {
   display: none;
   position:relative;
-  top:2%;
+  top:-20px;
   left:530px;
   border: 5px solid #f1f1f1;
   z-index: 12;
@@ -115,7 +115,7 @@ padding-left:70px;
   border: none;
   background: #f1f1f1;
 }
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+.form-container input[type=text]:focus, .form-container input[type=password]:focus,.form-container input[type=tel]:focus,textarea:focus {
   background-color: #ddd;
   outline: none;
 }
