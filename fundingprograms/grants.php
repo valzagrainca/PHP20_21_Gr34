@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="Products/jquery-3.5.1.js"></script>
+    <script src="jquery-3.5.1.js"></script>
     <script src="i_g_l_validation.js"></script>
     <script>
       $(document).ready(function(){
