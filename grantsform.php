@@ -29,7 +29,7 @@ if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Number)||!empty($Goa
       $stmt->close();
 
       $stmt=$conn->prepare($INSERT);
-      $stmt->bind_param("sssis",$Name,$Surname,$Email,$Number,$Goal);
+      $stmt->bind_param("sssss",$Name,$Surname,$Email,$Number,$Goal);
       $stmt->execute();
       echo "New record inserted! ";
     }else{
