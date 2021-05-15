@@ -119,9 +119,36 @@
           </div>
             <div class="box2">
                 <div class="content1">
-                    <h2 style="font-size: 40px;">Need a loan for your business?</h2>
-                    <p>BPKA works with lenders to provide loans to small businesses. The agency doesn’t lend money directly to small business owners. Instead, it sets guidelines for loans made by its partnering lenders, community development organizations, and micro-lending institutions. The SBA reduces risk for lenders and makes it easier for them to access capital. That makes it easier for small businesses to get loans.
-                        BPKA reduces risk and enables easier access to capital.
+                    <h2 style="font-size: 30px;">Need a loan for your business?</h2>
+                    <p style = "font-size: 21px;">
+                    <?php
+                    // Variabel globale
+                    $teksti = "Loans for different business sizes.";
+
+                    // Variabel globale qe do çaset nga funksioni sepse e ka keyword global
+                    $teksti2 = "business ";
+                    // Funksion me default paramter
+                    function defaultValues($employees1, $employees2, int $defaultOption = 30000) {
+                      // Nese printohet paraqet error sepse variabla eshte deklaruar jashte funksionit
+                      // echo $teksti;
+
+                      // Variabel lokale e deklaruar si static qe te pengon fshirjen e saj me vone
+                      $teksti3 = "A ";
+                      echo $teksti3;
+                      global $teksti2;
+                      echo $teksti2;
+                      echo "with ". $employees1."-".$employees2." employees gets up to $".$defaultOption.".";
+                        echo "<br>";
+                    }
+                    echo $teksti;
+                    // Printimi i $teksti3 shkakton error.
+                    // echo $teksti3;
+                    echo "<br>";
+                    defaultValues(1, 5, 2000);
+                    defaultValues(6, 10);
+                    defaultValues(11, 20, 100000);
+                    defaultValues(21, 30, 500000);
+                    ?>
                     </p>
                 </div>
                 </div>
@@ -142,17 +169,16 @@
                   <div class="box7">
                       
                     <h3>Why choose a loan with us?</h3>
-                   
-                    <ul style="list-style-type:circle">
-                      <li> We provide low rate loans personalized to yours and yours only</li>
-                      <li>Get an instant decision
-                         when you apply online</li>
-                      <li>You can pay more to pay off your 
-                        loan quicker – early settlement</li>
-                      <li>Good and quick services</li>
-                        <li>Meeting all customer needs for any type of loan
-                        </li>
-                    </ul>
+                    <?php
+                    // Perdorimi i built int functions: print_r(), explode() dhe implode()
+                    $first = "We provide low rate loans personalized to yours and yours only.,
+                    You get an instant decision when you apply online., We offer quick services. ";
+                    print_r(explode(',', $first, 3));
+                    echo "<br>"; echo "<br>";
+                    $arr = array("We provide low rate loans personalized to yours and yours only.",
+                    "You get an instant decision when you apply online", "We offer quick services. ");
+                    echo implode("<br>", $arr);
+                    ?>
                 </div>
             <div class="box8">
                     <h1>Types of Small Business Loans</h1>
