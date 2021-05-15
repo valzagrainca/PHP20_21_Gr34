@@ -93,7 +93,7 @@
               <button class="open-button" onclick="openForm()">Find Grants</button>
 
               <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
+                <form action="grantsform.php" method="POST" class="form-container">
                   <h1>Please complete the form below </h1>
                   <label for="name"><b>Name</b></label>
                   <input type="text" id="name" placeholder="Enter Name" name="name" required>
