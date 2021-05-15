@@ -88,7 +88,21 @@
               <div class="content">
                 <h1 data-text="Grants">Grants</h1>
                 <p style="font-size: 23px">
-                  The BPA works with different organizations to provide grants for small businesses. Find out if you meet the requirements to apply.
+                <?php
+                // If statements and 
+                $second = "Find out if you meet the ";
+                $third = "requirements to apply.";
+
+                if ($second == "Find out if you meet the "){ 
+                  if ($third == "requirements to apply.") {
+                    echo "BPA works with different organizations to provide grants. ";
+                    echo "You meet the requirements. ";
+                  }
+                }
+                else {
+                  echo "You don't meet the requirements. ";
+                }
+                ?>
               </p></div>
               <button class="open-button" onclick="openForm()">Find Grants</button>
 
@@ -132,12 +146,19 @@
           </div>
             <div class="box2">
                 <div class="content1">
-                    <h2>Grants for your business</h2>
-                    <p>The grants we give are provided by foundations, individuals or non-governmental organizations for the sole purpose of funding local promising projects.
-
-                      Winning a grant has the potential to transform your organization’s capacity to complete its mission.
-                      
-                      In order to receive one, submitting a proposal to the funder and fulfilling an application are required.
+                    <h3>Grants for your business</h3>
+                    <p>The grants we give are provided by foundations, individuals or non-governmental 
+                    organizations for the sole purpose of funding local promising projects. To receive one, 
+                    submitting a proposal to the funder and fulfilling an application are required.
+                    <?php
+                    // Built in function round()
+                    echo "Approximately ".sqrt(1000000)." businesses apply each year to get grants, and around "
+                    .round(395.98)." receive them.";
+                    echo "<br>";
+                    $mydate = getdate(date("U"));
+                    echo "Just yesterday ("."$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]".
+                    ") 15 entities have applied to receive grants.";
+                    ?>
                     </p>
                 </div>
                 </div>
@@ -162,11 +183,26 @@ window.onload = function() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 317"><path fill="rgb(196, 190, 190)" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,197.3C480,213,600,203,720,165.3C840,128,960,64,1080,58.7C1200,53,1320,107,1380,133.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                   </div>
                   <div class="box7">
-                      <h3>Who get grants?</h3>
+                      <h3>Who gets grants?</h3>
                       <p>
-                        Competition for grants is high – everybody wants free financing. You’ll see a lot of them are for non-profits, but keep looking, there are plenty for businesses too.
-  
-  Small business grants tend to be aimed at certain regions or sectors, specific types of businesses or causes, or particular community groups. 
+                      <?php
+                      // Funksion pa parametra qe ben printimin e shprehjes
+                      function print_sentence() {
+                        $textual = "Competition for grants is high – everybody wants free financing. 
+                        You’ll see a lot of them are for non-profits, but keep looking, there are plenty 
+                        for businesses too. Small business grants tend to be aimed at certain regions or 
+                        sectors, specific types of businesses or causes, or particular community groups. ";
+
+                        echo substr($textual, 0, 220);
+                        echo "<br>";
+                        echo "The paragraph contains ".strlen($textual). " bytes.";
+                        echo "<br>";
+                        echo "Searching the upper text to replace the word \"businesses\" with \"entities\";";
+                        echo "<br>";
+                        echo str_replace("businesses", "entities", $textual);
+                      }
+                      print_sentence();
+                      ?>
                       </p>
                       <button style="font-size: 15px;">Click to see categories</button><br><br>
                       <div class="warpper">       
@@ -191,15 +227,20 @@ window.onload = function() {
                     </div> 
                     
            <div class="box8">
-             <p>Funders look carefully at the applicant organization’s history, 
-             leadership and track record. Offer factual and objective descriptions of your 
-             organization’s accomplishments, including statistics and examples. Highlight 
-             achievements that will be most meaningful to the potential funder. 
-             “Season” your proposal with a quote from someone in the community who values the 
-             contributions of your organization. If your organization is new and its track record brief, 
-             look to the background of the staff and board of directors to provide credibility, 
-             and stress community partnerships to build the funder’s confidence in the new organization’s 
-             ability to achieve results.</p>
+           <p>
+           <?php
+           // Built in functions printf() dhe trim()
+           echo "Funders look carefully at the applicant organization’s history, leadership and track record.
+           Offer factual & objective descriptions of your organization’s accomplishments, including statistics 
+           and examples. ";
+           $str = " someone in the community who values the contributions of your organization. ";
+           $str2 = printf("“Season” your proposal with a quote from %s", $str);
+           $str3 = "+If your organization is new and its track record is brief, look to the background of 
+           the staff and board of directors to provide credibility and stress community partnerships to build 
+           the funder’s confidence in the new organization’s ability to achieve results.+";
+           echo trim($str3, "+");
+           ?>
+           </p>
              <a  href="tips.pdf" target="_blank">Some tips</a>
            </div> 
             </main>
