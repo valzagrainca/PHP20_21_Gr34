@@ -150,7 +150,19 @@
                   <div class="box7">
                       <h3>What SBIC offers</h3>
                       <p>
-                      SBICs invest in small businesses through debt, equity, or a combination of both. Debt is a loan an SBIC gives to a business, which the business must pay back, along with any interest. Equity is a share of ownership an SBIC gets in a business in exchange for providing funding. Sometimes, an SBIC invests in a business through both debt and equity. Such an investment includes both loans and shares of ownership. A typical SBIC investment is made over a 3-year period.
+                      <?php
+                      // Funksion me parametra
+                      function concatenation($number, $text2) {
+                        return $number.$text2;
+                      }
+                      echo "SBICs invest in small businesses through debt, equity, 
+                      or a combination of both. Debt is a loan an SBIC gives to a business, 
+                      which the business must pay back, along with any interest. 
+                      Equity is a share of ownership an SBIC gets in a business in exchange 
+                      for providing funding. Sometimes, an SBIC invests in a business through 
+                      both debt and equity. Such an investment includes both loans and shares 
+                      of ownership. A typical SBIC investment is made over a ".concatenation(3, "-year period.");
+                      ?>
                 </p></div>
 
                   
