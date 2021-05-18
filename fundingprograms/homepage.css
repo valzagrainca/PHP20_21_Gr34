@@ -17,7 +17,7 @@
     align-items: center;
     padding: 100px;
     box-sizing: border-box;
-    background: linear-gradient(180deg,#3a3a3a,#BEBEBE,#ffffff), url(images/kosovo1.png); /* background property url(..) */
+    background: linear-gradient(180deg,#3a3a3a,#BEBEBE,#ffffff), url(imagesfunding/kosovo1.png); /* background property url(..) */
     background-blend-mode: screen;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -80,7 +80,7 @@ align-content: center;
 }
 .fronti {
   background-color:#e7d1b5;
-  background-image: url(images/card.jpg);
+  background-image: url(imagesfunding/card.jpg);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;

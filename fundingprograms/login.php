@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Join Us</title>
-    <link rel="shortcut icon" type="image/png" href="images/3d.png">
+    <link rel="shortcut icon" type="image/png" href="imagesfunding/3d.png">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
@@ -63,6 +63,6 @@
     var data = new Date();
     document.getElementById("datee").innerHTML = data;
     </script>
-    <script src="js/draganddrop.js"></script>
+    <script src="../js/draganddrop.js"></script>
   </body>
 </html>

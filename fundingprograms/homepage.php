@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>BPA</title>
-        <link rel="shortcut icon"  href="images/3d.png">
+        <link rel="shortcut icon"  href="imagesfunding/3d.png">
         <link rel="stylesheet" type="text/css" href="homepage.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -71,13 +71,13 @@
                         <div class="nav-bar">
                         <ul class="nav-l">
                             <li class="nav-l-i">
-                                <a href="homepage.html" class="link" style="margin-left:140px;">Home</a>
+                                <a href="homepage.php" class="link" style="margin-left:140px;">Home</a>
                             </li>
                             <li class="nav-l-i">
-                                <a href="Promotions.html" class="link">Promotions</a>
+                                <a href="Promotions.php" class="link">Promotions</a>
                             </li>
                             <li class="nav-l-i">
-                                <a href="Products/Products.html" class="link">E-Shopping</a>
+                                <a href="../Products/Products.php" class="link">E-Shopping</a>
                             </li>
                             <li class="nav-l-i">
                               <div class="dropdown">
@@ -182,8 +182,8 @@
                                 We ensure you that your products will be displayed and promoted to an admirable number of customers.
                             </div>
                                 <video class="video1" width="640" height="360" controls>
-                                    <source src="images/video.mp4" type="video/mp4">
-                                    <source src="images/video.ogg" type="video/ogg">
+                                    <source src="imagesfunding/video.mp4" type="video/mp4">
+                                    <source src="imagesfunding/video.ogg" type="video/ogg">
                                     Your browser does not support the video tag.
                                 </video>
                         </div>
@@ -196,15 +196,15 @@
             </div>
             </div>
             <audio id="myAudio1">
-                <source src="images/clickk.mp3" type="audio/mpeg">
+                <source src="imagesfunding/clickk.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id="myAudio2">
-                <source src="images/click3.mp3" type="audio/mpeg">
+                <source src="imagesfunding/click3.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id="myAudio3">
-                <source src="images/click2.mp3" type="audio/mpeg">
+                <source src="imagesfunding/click2.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <script>
@@ -356,12 +356,12 @@
                         </div>
                     </div>
                     <div class="s-slider">
-                        <img src="images/test1.jfif" class="active" alt="Costumer 1" data-id="0">
-                        <img src="images/test2.jfif" alt="Costumer 2" data-id="1">
-                        <img src="images/test3.jfif" alt="Costumer 3" data-id="2">
+                        <img src="imagesfunding/test1.jfif" class="active" alt="Costumer 1" data-id="0">
+                        <img src="imagesfunding/test2.jfif" alt="Costumer 2" data-id="1">
+                        <img src="imagesfunding/test3.jfif" alt="Costumer 3" data-id="2">
                     </div>
                 </div>
-                <script src="js/testimonials.js"></script>
+                <script src="../js/testimonials.js"></script>
             </div>
             <div class="custom-shape-divider-bottom-1610404607">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -387,7 +387,7 @@
                     </div>
             
                     <div class="member">
-                        <img src="images/man.jpg" alt="Team Member">
+                        <img src="imagesfunding/man.jpg" alt="Team Member">
                         <div class="m-name">Enes Hasani</div>
                         <div class="m-position"><i>Media Strategist</i></div>
                         <div class="m-social">
@@ -397,7 +397,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="images/man.jpg" alt="Team Member">
+                        <img src="imagesfunding/man.jpg" alt="Team Member">
                         <div class="m-name">Erlis Lushtaku</div>
                         <div class="m-position"><i>Production Manager</i></div>
                         <div class="m-social">
@@ -407,7 +407,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="images/woman.jpg" alt="Team Member">
+                        <img src="imagesfunding/woman.jpg" alt="Team Member">
                         <div class="m-name">Riga Dibrani</div>
                         <div class="m-position"><i>Art Director</i></div>
                         <div class="m-social">
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="images/woman.jpg" alt="Team Member">
+                        <img src="imagesfunding/woman.jpg" alt="Team Member">
                         <div class="m-name">Rina Jasharaj</div>
                         <div class="m-position"><i>Web Designer</i></div>
                         <div class="m-social">
@@ -427,7 +427,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="images/woman.jpg" alt="Team Member">
+                        <img src="imagesfunding/woman.jpg" alt="Team Member">
                         <div class="m-name">Valëza Grainca</div>
                         <div class="m-position"><i>Web Developer</i></div>
                         <div class="m-social">
@@ -491,6 +491,6 @@
             <div style="background-color: rgb(92, 92, 92);color:rgb(189, 189, 189); height: 35px; padding-top: 5px;">&#169; Copyright 2021 Created By BPA All Rights Reserved</div>
            
         </footer>
-        <script src="js/smoothScroll.js"></script>
+        <script src="../js/smoothScroll.js"></script>
             </body>
         </html>
