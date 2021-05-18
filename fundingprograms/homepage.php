@@ -81,18 +81,18 @@
                             </li>
                             <li class="nav-l-i">
                               <div class="dropdown">
-                                <button class="dropbtn"> <a href="fundingprograms.html" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
+                                <button class="dropbtn"> <a href="fundingprograms.php" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
                                 </button>
                                 <div class="dropdown-content">
-                                  <a href="loans.html">Loans</a>
-                                  <a href="investment.html">Investment Capital</a>
-                                  <a href="grants.html">Grants</a>
+                                  <a href="loans.php">Loans</a>
+                                  <a href="investment.php">Investment Capital</a>
+                                  <a href="grants.php">Grants</a>
                                 </div>
                               </div> 
                                
                             </li>
                             <li class="nav-l-i">
-                                <a href="Kontakti.html" class="link">Contact Us</a>
+                                <a href="Kontakti.php" class="link">Contact Us</a>
                             </li>
                             <li class="tre"><span class="tre3"></span></li>
                         </ul>
@@ -101,7 +101,7 @@
                 <nav class="account">
                   <ul class="nav-l">
                     <li class="nav-l-i">
-                      <a class="link link_button" href="login.html">Join Us</a>
+                      <a class="link link_button" href="login.php">Join Us</a>
                     </li>
                   </ul>
                 </nav>
