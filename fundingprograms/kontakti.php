@@ -37,7 +37,7 @@ crossorigin="anonymous" />
                     <a href="Promotions.php" class="link">Promotions</a>
                 </li>
                 <li class="nav-l-i">
-                    <a href="Products/Products.php" class="link">E-Shopping</a>
+                    <a href="products/Products.php" class="link">E-Shopping</a>
                 </li>
                 <li class="nav-l-i">
                   <div class="dropdown">
