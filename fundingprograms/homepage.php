@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="homepage.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="js/scroll.js"></script>
+        
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="navigation.css">
@@ -196,15 +196,15 @@
             </div>
             </div>
             <audio id="myAudio1">
-                <source src="imagesfunding/clickk.mp3" type="audio/mpeg">
+                <source src="images/clickk.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id="myAudio2">
-                <source src="imagesfunding/click3.mp3" type="audio/mpeg">
+                <source src="images/click3.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <audio id="myAudio3">
-                <source src="imagesfunding/click2.mp3" type="audio/mpeg">
+                <source src="images/click2.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <script>
@@ -387,7 +387,7 @@
                     </div>
             
                     <div class="member">
-                        <img src="imagesfunding/man.jpg" alt="Team Member">
+                        <img src="images/man.jpg" alt="Team Member">
                         <div class="m-name">Enes Hasani</div>
                         <div class="m-position"><i>Media Strategist</i></div>
                         <div class="m-social">
@@ -397,7 +397,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="imagesfunding/man.jpg" alt="Team Member">
+                        <img src="images/man.jpg" alt="Team Member">
                         <div class="m-name">Erlis Lushtaku</div>
                         <div class="m-position"><i>Production Manager</i></div>
                         <div class="m-social">
@@ -407,7 +407,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="imagesfunding/woman.jpg" alt="Team Member">
+                        <img src="images/woman.jpg" alt="Team Member">
                         <div class="m-name">Riga Dibrani</div>
                         <div class="m-position"><i>Art Director</i></div>
                         <div class="m-social">
@@ -417,7 +417,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="imagesfunding/woman.jpg" alt="Team Member">
+                        <img src="images/woman.jpg" alt="Team Member">
                         <div class="m-name">Rina Jasharaj</div>
                         <div class="m-position"><i>Web Designer</i></div>
                         <div class="m-social">
@@ -427,7 +427,7 @@
                         </div>
                     </div>
                     <div class="member">
-                        <img src="imagesfunding/woman.jpg" alt="Team Member">
+                        <img src="images/woman.jpg" alt="Team Member">
                         <div class="m-name">Valëza Grainca</div>
                         <div class="m-position"><i>Web Developer</i></div>
                         <div class="m-social">
@@ -491,6 +491,7 @@
             <div style="background-color: rgb(92, 92, 92);color:rgb(189, 189, 189); height: 35px; padding-top: 5px;">&#169; Copyright 2021 Created By BPA All Rights Reserved</div>
            
         </footer>
-        <script src="../js/smoothScroll.js"></script>
+        <script src="../js/smoothscroll.js"></script>
+        <script src="js/scroll.js"></script>
             </body>
         </html>
