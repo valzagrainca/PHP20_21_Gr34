@@ -9,34 +9,34 @@ function Product(title, price, image, producer, category, city) {
   
   var art = {
     "products": [
-      new Product("Mild Interruption", "100\u20ac", "../Images/abstract2.jpg", "Paint Me", "ART", "Prishtina"),
-      new Product("Mona Lisa and the Cat Lady", "130\u20ac", "../Images/abstract4.jpg", "Paint Me", "ART", "Prishtina"),
-      new Product("An Instinct for Dragons", "180\u20ac", "../Images/abstract3.jpg", "Paint Me", "ART", "Prishtina"),
-      new Product("Bucket Hat", "20\u20ac", "../Images/yarny2.png", "Yarnyhandmade", "ART", "Vushtrri"),
-      new Product("Crop Top", "25\u20ac", "../Images/yarny3.png", "Yarnyhandmade", "ART", "Vushtrri"),
-      new Product("Crop Top", "35\u20ac", "../Images/yarny4.png", "Yarnyhandmade", "ART", "Vushtrri")
+      new Product("Mild Interruption", "100\u20ac", "../fundingprograms/images/abstract2.jpg", "Paint Me", "ART", "Prishtina"),
+      new Product("Mona Lisa and the Cat Lady", "130\u20ac", "../fundingprograms/images/abstract4.jpg", "Paint Me", "ART", "Prishtina"),
+      new Product("An Instinct for Dragons", "180\u20ac", "../fundingprograms/images/abstract3.jpg", "Paint Me", "ART", "Prishtina"),
+      new Product("Bucket Hat", "20\u20ac", "../fundingprograms/images/yarny2.png", "Yarnyhandmade", "ART", "Vushtrri"),
+      new Product("Crop Top", "25\u20ac", "../fundingprograms/images/yarny3.png", "Yarnyhandmade", "ART", "Vushtrri"),
+      new Product("Crop Top", "35\u20ac", "../fundingprograms/images/yarny4.png", "Yarnyhandmade", "ART", "Vushtrri")
     ]
   }
   
   var food = {
     "products": [
-      new Product("Vizatimi", "50\u20ac", "../Images/abetare.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-      new Product("Vizatimi", "50\u20ac", "../Images/baresha.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-      new Product("Vizatimi", "50\u20ac", "../Images/coloring.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-      new Product("Vizatimi", "50\u20ac", "../Images/main1.jpg", "2cm Humans", "CULTURE", "Prishtina"),
-      new Product("Vizatimi", "50\u20ac", "../Images/textil.jpg", "2cm Humans", "CULTURE", "Prishtina"),
-      new Product("Vizatimi", "50\u20ac", "../Images/kelmendi.jpg", "2cm Humans", "CULTURE", "Prishtina")
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/abetare.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/baresha.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/coloring.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/main1.jpg", "2cm Humans", "CULTURE", "Prishtina"),
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/textil.jpg", "2cm Humans", "CULTURE", "Prishtina"),
+      new Product("Vizatimi", "50\u20ac", "../fundingprograms/images/kelmendi.jpg", "2cm Humans", "CULTURE", "Prishtina")
     ]
   }
   
   var textile = {
     "products": [
-      new Product("Bakllav", "30\u20ac", "../Images/bakllav.png", "Flizza", "FOODS", "Prishtina"),
+      new Product("Bakllav", "30\u20ac", "../fundingprograms/images/bakllav.png", "Flizza", "FOODS", "Prishtina"),
       new Product("Fli", "25\u20ac", "ProductsImages/2.jfif", "Flizza", "FOODS", "Prishtina"),
-      new Product("Kadaif", "20\u20ac", "../Images/kadaif.jpg", "Flizza", "FOODS", "Prishtina"),
-      new Product("Chocolate Cake", "20\u20ac", "../Images/chocolate.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina"),
-      new Product("Fruit Cake", "20\u20ac", "../Images/heart.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina"),
-      new Product("Harry Potter and the Cake of Secrets", "25\u20ac", "../Images/hp.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina")
+      new Product("Kadaif", "20\u20ac", "../fundingprograms/images/kadaif.jpg", "Flizza", "FOODS", "Prishtina"),
+      new Product("Chocolate Cake", "20\u20ac", "../fundingprograms/images/chocolate.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina"),
+      new Product("Fruit Cake", "20\u20ac", "../fundingprograms/images/heart.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina"),
+      new Product("Harry Potter and the Cake of Secrets", "25\u20ac", "../fundingprograms/images/hp.jpg", "Dolcetto Vjosa", "FOODS", "Prishtina")
     ]
   }
   
