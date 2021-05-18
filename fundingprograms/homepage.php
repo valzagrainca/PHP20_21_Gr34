@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>BPA</title>
-        <link rel="shortcut icon"  href="imagesfunding/3d.png">
+        <link rel="shortcut icon"  href="images/3d.png">
         <link rel="stylesheet" type="text/css" href="homepage.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -182,8 +182,8 @@
                                 We ensure you that your products will be displayed and promoted to an admirable number of customers.
                             </div>
                                 <video class="video1" width="640" height="360" controls>
-                                    <source src="imagesfunding/video.mp4" type="video/mp4">
-                                    <source src="imagesfunding/video.ogg" type="video/ogg">
+                                    <source src="images/video.mp4" type="video/mp4">
+                                    <source src="images/video.ogg" type="video/ogg">
                                     Your browser does not support the video tag.
                                 </video>
                         </div>
@@ -356,9 +356,9 @@
                         </div>
                     </div>
                     <div class="s-slider">
-                        <img src="imagesfunding/test1.jfif" class="active" alt="Costumer 1" data-id="0">
-                        <img src="imagesfunding/test2.jfif" alt="Costumer 2" data-id="1">
-                        <img src="imagesfunding/test3.jfif" alt="Costumer 3" data-id="2">
+                        <img src="images/test1.jfif" class="active" alt="Costumer 1" data-id="0">
+                        <img src="images/test2.jfif" alt="Costumer 2" data-id="1">
+                        <img src="images/test3.jfif" alt="Costumer 3" data-id="2">
                     </div>
                 </div>
                 <script src="../js/testimonials.js"></script>
