@@ -1,3 +1,6 @@
+<?php include 'TypeOneCookies.php';
+$Vdata = file_get_contents('TypeOneCookies.php');
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -120,6 +123,22 @@
             <div class="box2">
                 <div class="content1">
                     <h2 style="font-size: 30px;">Need a loan for your business?</h2>
+                    <?php
+                for ($i = 1; $i <= 3; $i++) {
+                  if(!isset($_COOKIE[${"cookies".$i}->getName()])) {
+                      echo "Cookie '" . ${"cookies".$i}->getName(). "' has not been set!"; echo "<br>";
+                    } else {
+                      echo "Cookie '" . ${"cookies".$i}->getName() . "' has been set!"; echo "<br>";
+                      print_r($_COOKIE);
+                      echo "<br>";
+                      // printimi i vlerave te cookies
+                      // foreach ($_COOKIE as $key => $value)
+                      //     {
+                          //     echo $key.' is '.$value. "<br>\n";
+                          //   }
+                    }
+              }
+                ?>
                     <p style = "font-size: 21px;">
                     <?php
                     // Variabel globale
