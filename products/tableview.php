@@ -30,13 +30,13 @@
                     <div class="nav-bar">
                     <ul class="nav-l">
                         <li class="nav-l-i">
-                            <a href="../homepage.html" class="link" style="margin-left:140px;">Home</a>
+                            <a href="../fundingprograms/homepage.php" class="link" style="margin-left:140px;">Home</a>
                         </li>
                         <li class="nav-l-i">
-                            <a href="../Promotions.html" class="link">Promotions</a>
+                            <a href="../fundingprograms/Promotions.php" class="link">Promotions</a>
                         </li>
                         <li class="nav-l-i">
-                            <a href="Products.html" class="link">E-Shopping</a>
+                            <a href="Products.php" class="link">E-Shopping</a>
                         </li>
                         <li class="nav-l-i">
                           <div class="dropdown">
@@ -51,7 +51,7 @@
                            
                         </li>
                         <li class="nav-l-i">
-                            <a href="../Kontakti.html" class="link">Contact Us</a>
+                            <a href="../fundingprograms/Kontakti.php" class="link">Contact Us</a>
                         </li>
                         <li class="tre"><span class="tre3"></span></li>
                     </ul>
@@ -60,7 +60,7 @@
             <nav class="account">
               <ul class="nav-l">
                 <li class="nav-l-i">
-                  <a class="link link_button" href="../login.html">Join Us</a>
+                  <a class="link link_button" href="../fundingprograms/login.php">Join Us</a>
                 </li>
               </ul>
             </nav>
