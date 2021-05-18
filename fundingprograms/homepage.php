@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>BPA</title>
-        <link rel="shortcut icon" type="image/png" href="images/3d.png">
+        <link rel="shortcut icon"  href="images/3d.png">
         <link rel="stylesheet" type="text/css" href="homepage.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
