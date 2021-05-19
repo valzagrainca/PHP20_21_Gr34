@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="Products.css">
-    <link rel="stylesheet" type="text/css" href="SingleProduct.css">
+    <link rel="stylesheet" type="text/css" href="products.css">
+    <link rel="stylesheet" type="text/css" href="singleproduct.css">
     <link rel="stylesheet" type="text/css" href="navigation.css">
     <title>E-Shopping</title>
     <link rel="shortcut icon" type="image/png" href="../fundingprograms/images/3d.png">
@@ -81,7 +81,7 @@
         <section>
             <div id="icons">
                 <i class="fas fa-th"></i>
-                <a href="TableView.php" title="Table View" style="text-shadow: none;"><i class="fas fa-list"></i></a>
+                <a href="tableview.php" title="Table View" style="text-shadow: none;"><i class="fas fa-list"></i></a>
             </div>
             <div id="Art">
                 <div>

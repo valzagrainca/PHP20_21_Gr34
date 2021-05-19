@@ -53,7 +53,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<img>")
                 .attr("src", item.image)
               )
@@ -64,7 +64,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<h3>").text(item.title))
             )
             .append($("<h4>").text(item.price))
@@ -112,7 +112,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<img>")
                 .attr("src", item.image)
               )
@@ -123,7 +123,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<h3>").text(item.title))
             )
             .append($("<h4>").text(item.price))
@@ -171,7 +171,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<img>")
                 .attr("src", item.image)
               )
@@ -182,7 +182,7 @@ function Product(title, price, image, producer, category, city) {
               .click(function () {
                 localStorage.setItem('prod', JSON.stringify(item));
               })
-              .attr("href", "SingleProduct.html?")
+              .attr("href", "singleproduct.php?")
               .append($("<h3>").text(item.title))
             )
             .append($("<h4>").text(item.price))
