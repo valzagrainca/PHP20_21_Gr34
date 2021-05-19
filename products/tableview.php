@@ -40,12 +40,12 @@
                         </li>
                         <li class="nav-l-i">
                           <div class="dropdown">
-                            <button class="dropbtn"> <a href="../fundingprograms.html" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
+                            <button class="dropbtn"> <a href="../fundingprograms.php" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
                             </button>
                             <div class="dropdown-content">
-                              <a href="../loans.html">Loans</a>
-                              <a href="../investment.html">Investment Capital</a>
-                              <a href="../grants.html">Grants</a>
+                              <a href="../loans.php">Loans</a>
+                              <a href="../investment.php">Investment Capital</a>
+                              <a href="../grants.php">Grants</a>
                             </div>
                           </div> 
                            
