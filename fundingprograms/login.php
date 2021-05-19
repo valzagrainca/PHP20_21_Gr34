@@ -1,8 +1,60 @@
 <?php
-include 'confiig.php';
-if(isset($_POST['submit'])){
+include 'config.php';
+session_start();
 
+
+error_reporting(0); //mos me dal shkronjat pa kuptim
+if(!isset($_SESSION['username'])){
+  header("Location: welcome.php");
 }
+
+if(isset($_POST['submit'])){
+  $username1=$_POST['username1'];
+  $email1=$_POST['email1'];
+  $password1=md5($_POST['password1']);
+  $password2=md5($_POST['password2']);
+
+  if($password1 == $password2){
+    $sql= "SELECT * FROM users WHERE email='$email1' ";
+    $result = mysqli_query($conn,$sql);
+    if($result->num_rows > 0){
+      echo"<script>alert('Email Already Exists!')</script>";
+    }else{
+      $sql="INSERT INTO users (username, email, password)
+      VALUES ('$username1', '$email1', '$password1')";
+      $result=mysqli_query($conn,$sql);
+      if($result){
+      echo"<script>alert('User Registration Completed Succesfully.')</script>";
+      $username1="";
+      $email1="";
+      $_POST['password1']="";
+      $_POST['password2']="";
+
+      } else {
+        echo"<script>alert('Something went wrong!')</script>";
+      } 
+    }
+    
+  } else {
+    echo"<script>alert('Password Not Mached.')</script>";
+  }
+    }
+
+  if(isset($_POST['login'])){
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+
+    $sql1="SELECT * FROM users WHERE email='$email' AND password='$password'";
+    $result1=mysqli_query($conn,$sql);
+    if($result1->num_rows>0) {
+      $row=mysqli_fetch_assoc($result1);
+      $_SESSION['username'] = $row['username'];
+      header("Location: welcome.php");
+    } else {
+      echo"<script>alert('Email or Password Incorrect.')</script>";
+    }
+  }
+  
 ?> 
 <!DOCTYPE html>
 <html>
@@ -35,8 +87,8 @@ if(isset($_POST['submit'])){
     <div class="form">
       <form class="login-form" action="" method="POST">
         
-        <input class="user-datas" id="username" type="text" name="username" placeholder="Username" required autofocus>
-        <input class="user-datas" id="password" type="password" name="username" placeholder="Password" required>
+        <input class="user-datas" id="email" type="text" name="email" value="<?php echo $email; ?>" placeholder="Email" required autofocus>
+        <input class="user-datas" id="password" type="password" name="password" value="<?php echo $_POST['$password']; ?>" placeholder="Password" required>
         <div class="log-in1">
           <label class="remember-me"><input type="checkbox" name="">Remember me</label>
           <a href="#">Forgot your password?</a>
@@ -47,11 +99,11 @@ if(isset($_POST['submit'])){
         </div>
       </form>
       
-      <form class="signup-form" action="" method="post">
-        <input class="user-datas" id="username1" type="text" name="username" placeholder="Username"  required>
-        <input class="user-datas" id="email1" type="email" name="email" placeholder="Email Address" required autocomplete="on">
-        <input class="user-datas" id="password1" type="password" name="password" placeholder="Password" required>
-        <input class="user-datas" id="password1" type="password" name="password" placeholder="Confirm Password" required>
+      <form class="signup-form" action="" method="POST">
+        <input class="user-datas" id="username1" type="text" name="username1" value="<?php echo $username1; ?>" placeholder="Username"  required>
+        <input class="user-datas" id="email1" type="email" name="email1" value="<?php echo $email1; ?>" placeholder="Email Address" required autocomplete="on">
+        <input class="user-datas" id="password1" type="password" name="password1" value="<?php echo $_POST['$password1']; ?>" placeholder="Password" required>
+        <input class="user-datas" id="password1" type="password" name="password2" value="<?php echo $_POST['$password2']; ?>" placeholder="Confirm Password" required>
         <input class="btn" type="submit" name="submit" value="SIGN UP" onclick="return signup_validation()">
         <div class="sign-up">
           <p>Already Registered? <a href="#">Sign In</a></p>
