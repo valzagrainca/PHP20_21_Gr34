@@ -40,7 +40,7 @@
                         </li>
                         <li class="nav-l-i">
                             <div class="dropdown">
-                                <button class="dropbtn"> <a href="../fundingprograms/fundingprograms.html" class="link">Funding <i
+                                <button class="dropbtn"> <a href="../fundingprograms/fundingprograms.php" class="link">Funding <i
                                             class="fa fa-caret-down" style="font-size:18px;"></i></a>
                                 </button>
                                 <div class="dropdown-content">
