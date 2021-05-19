@@ -22,27 +22,27 @@
               <div class="nav-bar">
               <ul class="nav-l">
                   <li class="nav-l-i">
-                      <a href="homepage.html" class="link" style="margin-left:140px;">Home</a>
+                      <a href="homepage.php" class="link" style="margin-left:140px;">Home</a>
                   </li>
                   <li class="nav-l-i">
-                      <a href="Promotions.html" class="link">Promotions</a>
+                      <a href="Promotions.php" class="link">Promotions</a>
                   </li>
                   <li class="nav-l-i">
-                      <a href="Products/Products.html" class="link">E-Shopping</a>
+                      <a href="products/Products.php" class="link">E-Shopping</a>
                   </li>
                   <li class="nav-l-i">
                     <div class="dropdown">
-                      <button class="dropbtn"> <a href="fundingprograms.html" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
+                      <button class="dropbtn"> <a href="fundingprograms.php" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
                       </button>
                       <div class="dropdown-content">
-                        <a href="loans.html">Loans</a>
-                        <a href="investment.html">Investment Capital</a>
-                        <a href="grants.html">Grants</a>
+                        <a href="loans.php">Loans</a>
+                        <a href="investment.php">Investment Capital</a>
+                        <a href="grants.php">Grants</a>
                       </div>
                     </div> 
                   </li>
                   <li class="nav-l-i">
-                      <a href="Kontakti.html" class="link">Contact Us</a>
+                      <a href="Kontakti.php" class="link">Contact Us</a>
                   </li>
                   <li class="tre"><span class="tre3"></span></li>
               </ul>
@@ -51,7 +51,7 @@
       <nav class="account">
         <ul class="nav-l">
           <li class="nav-l-i">
-            <a class="link link_button" href="login.html">Join Us</a>
+            <a class="link link_button" href="login.php">Join Us</a>
           </li>
         </ul>
       </nav>
@@ -76,7 +76,7 @@
             Great enterprises start because the founders want to change the world.
             Start your business with guaranteed loans.
           </br>
-          <a  href="loans.html">Read more</a>
+          <a  href="loans.php">Read more</a>
           </div>
           
         </div>
@@ -93,7 +93,7 @@
             So your firm can grow and flourish, a capital investment is more than welcome. 
             Let's see which company is more suitable for you.
           </br>
-            <a  href="investment.html">Read more</a>
+            <a  href="investment.php">Read more</a>
           </div> 
         </div>
   </div>
@@ -108,7 +108,7 @@
         As new businesses, you might need a little push. Luckily, our investors are ready to fund you.
         Apply now to get a head starting grant.
       </br>
-      <a  href="grants.html">Read more</a>
+      <a  href="grants.php">Read more</a>
       </div>
       
     </div>
