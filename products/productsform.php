@@ -1,11 +1,13 @@
 <?php
 $Name=$_POST['name'];
 $Surname=$_POST['surname'];
+$Email=$_POST['email'];
 $Address=$_POST['address'];
 $Postal=$_POST['pcode'];
-$City=$_POST['selectCity'];
+$City=$_POST['city'];
+$Country=$_POST['mySelect'];
 $Number=$_POST['phone'];
-if(!empty($Name)||!empty($Surname)||!empty($Address)||!empty($Number)||!empty($Postal)||!empty($City)){
+if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Address)||!empty($Number)||!empty($Postal)){
   $host="localhost";
   $dbUsername="root";
   $dbPassword="";
@@ -16,26 +18,11 @@ if(!empty($Name)||!empty($Surname)||!empty($Address)||!empty($Number)||!empty($P
     die('Connect Error('.mysqli_connect_error().')'.mysqli_connect_error());
   }
   else{
-    $SELECT="SELECT Email From dbproduct Where Email= ? Limit 1";
-    $INSERT="INSERT Into dbproduct (Emri,Mbiemri,Adresa,Numri,PostalCode,Shteti) values(?,?,?,?,?,?)";
-    //insert the values if the email hasn't been used before
-    $stmt=$conn->prepare($SELECT);
-    $stmt->bind_param("s",$Email);//s for string
-    $stmt->execute();
-    $stmt->bind_result($email);
-    $stmt->store_result();
-    $rnum=$stmt->num_rows;//numron ne sa rreshta ndodhet email
-    
-    if($rnum==0){
-      $stmt->close();
-
+    $INSERT="INSERT Into dbproduct (Emri,Mbiemri,Adresa,Numri,PostalCode,City,Country) values(?,?,?,?,?,?,?)";
       $stmt=$conn->prepare($INSERT);
-      $stmt->bind_param("ssssss",$Name,$Surname,$Address,$Number,$Postal,$City);
+      $stmt->bind_param("sssssiss",$Name,$Surname,$Email,$Address,$Number,$Postal,$City,$Country);
       $stmt->execute();
       echo "New record inserted! ";
-    }else{
-      echo "Someone already register with the same email ";
-    }
     $stmt->close();
     $conn->close();
   
