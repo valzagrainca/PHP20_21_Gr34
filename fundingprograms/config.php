@@ -5,7 +5,7 @@ $username="root";
 $pass="";
 $database="join_us";
 
-$conn=mysqli_connect($server,$username,$password,$database);
+$conn=mysqli_connect($server,$username,$pass,$database);
 
 if(!$conn){
     die("<script>alert('Connection Failed.')</script>");
