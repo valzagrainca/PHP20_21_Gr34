@@ -13,7 +13,7 @@
 main{
   display:grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 800px 20px 700px 170px 650px 400px;
+  grid-template-rows: 800px 20px 700px 170px 830px 400px;
  grid-template-areas:
   "box1 box1 box1"
   "box4 box4 box4"
