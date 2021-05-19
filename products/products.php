@@ -44,9 +44,9 @@
                                             class="fa fa-caret-down" style="font-size:18px;"></i></a>
                                 </button>
                                 <div class="dropdown-content">
-                                    <a href="../fundingprograms/loans.html">Loans</a>
-                                    <a href="../fundingprograms/investment.html">Investment Capital</a>
-                                    <a href="../fundingprograms/grants.html">Grants</a>
+                                    <a href="../fundingprograms/loans.php">Loans</a>
+                                    <a href="../fundingprograms/investment.php">Investment Capital</a>
+                                    <a href="../fundingprograms/grants.php">Grants</a>
                                 </div>
                             </div>
 
