@@ -1,5 +1,8 @@
 <?php
 include 'config.php';
+if(isset($_POST['submit'])){
+
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +33,7 @@ include 'config.php';
       </div>
            
     <div class="form">
-      <form class="login-form" action="" method="post">
+      <form class="login-form" action="" method="POST">
         
         <input class="user-datas" id="username" type="text" name="username" placeholder="Username" required autofocus>
         <input class="user-datas" id="password" type="password" name="username" placeholder="Password" required>
@@ -48,7 +51,8 @@ include 'config.php';
         <input class="user-datas" id="username1" type="text" name="username" placeholder="Username"  required>
         <input class="user-datas" id="email1" type="email" name="email" placeholder="Email Address" required autocomplete="on">
         <input class="user-datas" id="password1" type="password" name="password" placeholder="Password" required>
-        <input class="btn" type="submit" name="signup" value="SIGN UP" onclick="return signup_validation()">
+        <input class="user-datas" id="password1" type="password" name="password" placeholder="Confirm Password" required>
+        <input class="btn" type="submit" name="submit" value="SIGN UP" onclick="return signup_validation()">
         <div class="sign-up">
           <p>Already Registered? <a href="#">Sign In</a></p>
         </div>
