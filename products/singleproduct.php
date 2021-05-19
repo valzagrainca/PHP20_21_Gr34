@@ -90,7 +90,7 @@
 
     <div id="bigDiv">
         <div class="form-popup" id="myForm" style="border-radius: 15px;">
-            <form action="productsform.php" class="form-container">
+            <form action="productsform.php"  method="POST" class="form-container">
                 <h4>Contact information</h4>
                 <input type="email" id="email" placeholder="Email" name="email">
                 <h4>Shipping address</h4>
@@ -99,7 +99,7 @@
                 <input type="text" id="address" placeholder="Address" name="Adress">
                 <input type="text" id="pcode" placeholder="Postal Code" name="pcode">
                 <input type="text" id="city" placeholder="City" name="city">
-                <select id="mySelect" name="selectCity" onchange="change_placeholder(this)">
+                <select id="mySelect" name="mySelect" onchange="change_placeholder(this)">
                     <option value="">Select your country...</option>
                     <option value="Albania">Albania</option>
                     <option value="Kosovo">Kosovo</option>
