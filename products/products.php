@@ -129,7 +129,7 @@
                     <input type="text" id="address" placeholder="Address" name="address">
                     <input type="text" id="pcode" placeholder="Postal Code" name="pcode">
                     <input type="text" id="city" placeholder="City" name="city">
-                    <select id="mySelect" name="selectCity" onchange="change_placeholder(this)">
+                    <select id="mySelect" name="mySelect" onchange="change_placeholder(this)">
                         <option value="">Select your country...</option>
                         <option value="Albania">Albania</option>
                         <option value="Kosovo">Kosovo</option>
