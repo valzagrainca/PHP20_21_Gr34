@@ -27,28 +27,28 @@
                     <div class="nav-bar">
                     <ul class="nav-l">
                         <li class="nav-l-i">
-                            <a href="../fundingprograms/homepage.html" class="link" style="margin-left:140px;">Home</a>
+                            <a href="../fundingprograms/homepage.php" class="link" style="margin-left:140px;">Home</a>
                         </li>
                         <li class="nav-l-i">
-                            <a href="../fundingprograms/Promotions.html" class="link">Promotions</a>
+                            <a href="../fundingprograms/Promotions.php" class="link">Promotions</a>
                         </li>
                         <li class="nav-l-i">
-                            <a href="Products.html" class="link">E-Shopping</a>
+                            <a href="Products.php" class="link">E-Shopping</a>
                         </li>
                         <li class="nav-l-i">
                           <div class="dropdown">
-                            <button class="dropbtn"> <a href="../fundingprograms/fundingprograms.html" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
+                            <button class="dropbtn"> <a href="../fundingprograms/fundingprograms.php" class="link">Funding  <i class="fa fa-caret-down" style="font-size:18px;"></i></a>
                             </button>
                             <div class="dropdown-content">
-                              <a href="../fundingprograms/loans.html">Loans</a>
-                              <a href="../fundingprograms/investment.html">Investment Capital</a>
-                              <a href="../fundingprograms/grants.html">Grants</a>
+                              <a href="../fundingprograms/loans.php">Loans</a>
+                              <a href="../fundingprograms/investment.php">Investment Capital</a>
+                              <a href="../fundingprograms/grants.php">Grants</a>
                             </div>
                           </div> 
                            
                         </li>
                         <li class="nav-l-i">
-                            <a href="../fundingprograms/Kontakti.html" class="link">Contact Us</a>
+                            <a href="../fundingprograms/Kontakti.php" class="link">Contact Us</a>
                         </li>
                         <li class="tre"><span class="tre3"></span></li>
                     </ul>
@@ -57,7 +57,7 @@
             <nav class="account">
               <ul class="nav-l">
                 <li class="nav-l-i">
-                  <a class="link link_button" href="../fundingprograms/login.html">Join Us</a>
+                  <a class="link link_button" href="../fundingprograms/login.php">Join Us</a>
                 </li>
               </ul>
             </nav>
