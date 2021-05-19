@@ -153,34 +153,8 @@ defbtn.addEventListener("change",function(){
 
 <div class="box"><div class="box1"><i class="fas fa-search"></i></div>
 <div id="inside">
-  <p style="font-size: 10px; text-align: center; margin-top: 0px;" >
-  <button class="open-button" onclick="openForm()">Send mail</button></p>
-  <div class="form-popup" id="myForm">
-                <form action="sendmail.php" method="POST" class="form-container">
-                  <label for="emri"  style="color:#333;font-size:15px;"><b>Name</b></label>
-                </br>
-                  <input type="text" id="name" placeholder="Enter Name" name="emri" style="width:450px;" required>
-                </br>
-                <label for="email" style="color:#333;font-size:15px;"><b>Email</b></label>
-                </br>
-                <input type="text" id="emaila" placeholder="Enter Email" name="email" style="width:450px;" required>
-                  <label for="subject" style="color:#333;font-size:15px;"><b>Message</b></label>
-                </br>
-                  <textarea id="subject" name="subject" placeholder="Enter text here.." cols="30" rows="4" style="width:490px;height:150px;margin-left:30px;"></textarea>
-                  <button type="submit" class="btn" onclick="return validation()">Summbit</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-              </div>
-              <script>
-                function openForm() {
-                  document.getElementById("myForm").style.display = "block";
-                }
-                
-                function closeForm() {
-                  document.getElementById("myForm").style.display = "none";
-                }
-                </script>
-  </div>
+  <p style="font-size: 10px; text-align: center; margin-top: 0px;" ><output  id="searchi" onload="checkm()"></output></p>
+</div>
 </div>
 <div class="box" style="margin-top:0px;"><div class="box1"> <i class="fas fa-map-marker-alt"></i></div>
 <div id="inside">
