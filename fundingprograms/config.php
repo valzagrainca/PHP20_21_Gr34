@@ -1,6 +1,6 @@
 <?php
 
-$server="localhost";
+$server="192.168.0.108";
 $username="root";
 $pass="";
 $database="join_us";
