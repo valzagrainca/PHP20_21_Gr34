@@ -21,9 +21,9 @@ if(isset($_POST['submit'])){
                 header("Location: register.php?signup=char");
                 exit();
             }
-            else {
-                header("Location: register.php?signup=success");
-            }
+            // else {
+            //     header("Location: register.php?signup=success");
+            // }
         }
     }
 

@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
         <input class="btn" type="submit" name="submit" value="SIGN UP">
         <div class="sign-up">
           <p>Already Registered? <a href="login.php">Sign In</a></p>
-          <br><br>
+          <br>
         </div>
       </form>
 
@@ -100,9 +100,9 @@ if (isset($_POST['submit'])) {
           echo "<p>You used an invalid email!</p>";
           exit();
         }
-        elseif(strpos($fullURL, "signup=success") == true) {
-          echo "<p>You have been signed up!</p>";
-        }
+        // elseif(strpos($fullURL, "signup=success") == true) {
+        //   echo "<p>You have been signed up!</p>";
+        // }
       
       ?>
 
