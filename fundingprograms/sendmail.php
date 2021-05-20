@@ -2,7 +2,7 @@
 
 $to_email =$_POST['email'];
 $body = $_POST['subject'];
-$headers = "From: valzagrainca1@gmail.com";
+$headers = "From: riga.dibrani@student.uni-pr.edu";
 $subject="Test Email";
 
 if(mail($to_email, $subject, $body, $headers)){
