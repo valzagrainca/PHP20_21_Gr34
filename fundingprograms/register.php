@@ -73,11 +73,12 @@ if (isset($_POST['submit'])) {
       <div class="formA">
       
       <form class="signup-form" action="signup.inc.php" method="POST">
-        <input class="user-datas" type="text" name="username" value="<?php echo $username; ?>" placeholder="Username"  required>
-        <input class="user-datas" type="email" name="email" value="<?php echo $email; ?>" placeholder="Email Address" required autocomplete="on">
-        <input class="user-datas" type="password" name="password" value="<?php echo $_POST['$password']; ?>" placeholder="Password" required>
-        <input class="user-datas" type="password" name="cpassword" value="<?php echo $_POST['$cpassword']; ?>" placeholder="Confirm Password" required>
-        <input class="btn" type="submit" name="submit" value="SIGN UP" onclick="return signup_validation()">
+        <input class="user-datas" type="text" name="username" value="<?php echo $username; ?>" placeholder="Username" >
+        <input class="user-datas" type="email" name="email" value="<?php echo $email; ?>" placeholder="Email Address">
+        <input class="user-datas" type="password" name="password" value="<?php echo $_POST['$password']; ?>" placeholder="Password">
+        <input class="user-datas" type="password" name="cpassword" value="<?php echo $_POST['$cpassword']; ?>" placeholder="Confirm Password">
+        <!-- <input class="btn" type="submit" name="submit" value="SIGN UP" onclick="return signup_validation()"> -->
+        <input class="btn" type="submit" name="submit" value="SIGN UP">
         <div class="sign-up">
           <p>Already Registered? <a href="login.php">Sign In</a></p>
         </div>
