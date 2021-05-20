@@ -28,7 +28,8 @@ if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Number)||!empty($Goa
     $random_name="";
     $query_random="SELECT Id,Emri,Mbiemri,Email From grantsdb ORDER BY RAND() LIMIT 1";
     $radomres=mysqli_query($conn,$query_random);
-    if(($firstdayofmonth===$today)&&(mysqli_num_rows($result)>0)){
+    if($firstdayofmonth===$today){
+      if(mysqli_num_rows($result)>0){
       while($row=mysqli_fetch_assoc($radomres)){
         $random_name=$row["Emri"];
         $id=$row["Id"];
@@ -45,7 +46,7 @@ if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Number)||!empty($Goa
     else{
       echo "No records from last month\n";
       echo "<br>";
-    }
+    }}
     $stmt=$conn->prepare($SELECT);
     $stmt->bind_param("s",$Email);//s for string
     $stmt->execute();
