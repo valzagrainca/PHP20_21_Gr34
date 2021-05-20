@@ -25,7 +25,7 @@
           echo "<p>Choose a proper username!</p>";
         }
         else if($_GET['error'] == "invalidpwd") {
-          echo "<p>Password should contain lower and upper cases, a number and min 8 char!</p>";
+          echo "<p>Pwd should contain lower, upper cases, numbers and min 8 char!</p>";
         }
         else if($_GET['error'] == "invalidemail") {
           echo "<p>Choose a proper email!</p>";

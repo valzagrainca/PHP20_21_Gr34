@@ -24,7 +24,7 @@ function invalidUid($username){
 
 function invalidPwd($pwd){
     $result="";
-    if(!preg_match("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}*$/", $pwd)){
+    if(!preg_match("/#.*^(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])*$#/", $pwd)){
         $result=true;
     }
     else {
