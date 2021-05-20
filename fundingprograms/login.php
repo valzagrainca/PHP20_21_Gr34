@@ -6,7 +6,7 @@ include_once 'header.php';
     <div class="form">
       <form class="login-form" action="login.inc.php" method="POST">
         
-        <input class="user-datas" type="text" name="name" placeholder="Username/Email">
+        <input class="user-datas" type="text" name="uid" placeholder="Username/Email">
         <input class="user-datas" type="password" name="pwd" placeholder="Password">
         <div class="log-in1">
           <label class="remember-me"><input type="checkbox" name="">Remember me</label>
