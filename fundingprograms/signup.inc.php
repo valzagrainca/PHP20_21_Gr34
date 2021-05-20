@@ -1,36 +1,43 @@
 <?php 
 // error handling
-if(isset($_POST['submit'])){
 
-    include_once 'config.php';
-    $username = $_POST['username'];
+if(isset($_POST['submit'])){ //if this is set inside the code continue doing whatever u r doing
+
+    $name = $_POST['name'];
 	$email = $_POST['email'];
-	$password = md5($_POST['password']);
-	$cpassword = md5($_POST['cpassword']);
+    $username = $_POST['uid'];
+    $pwd = $_POST['pwd'];
+	$pwdRepeat =$_POST['pwdrepeat'];
 
-    if(empty($username) || empty($email) || empty($password) || empty($cpassword) ) {
-        header("Location: register.php?signup=empty");
+
+    require_once 'dbh.inc.php';
+    require_once 'functions.inc.php';
+
+    if(emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat)!==false){
+        header("Location: signup.php?error=emptyinput");
         exit();
-    } else {
-        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            header("Location: register.php?signup=invalidemail");
-            exit();
-        }
-        else {
-            if(!preg_match('/^[a-zA-Z]*$/',$username)) {
-                header("Location: register.php?signup=char");
-                exit();
-            }
-            // else {
-            //     header("Location: register.php?signup=success");
-            // }
-        }
+    }
+    if(invalidUid($username)!==false){
+        header("Location: signup.php?error=invaliduid");
+        exit();
+    }
+    if(invalidEmail($email)!==false){
+        header("Location: signup.php?error=invalidemail");
+        exit();
+    }
+    if(pswMatch($pwd,$pwdRepeat)!==false){
+        header("Location: signup.php?error=passwordsdontmatch");
+        exit();
+    }
+    if(uidExists($conn,$username,$email)!==false){
+        header("Location: signup.php?error=usernametaken");
+        exit();
     }
 
+    createUser($conn, $name, $email, $username, $pwd);
+
 } else {
-    header("Location: register.php?signup=error");
+    header("Location: signup.php");
+    //header is a function that can send the user back to a particular place
+    exit();
 }
-
-
-
-?>
