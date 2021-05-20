@@ -153,7 +153,7 @@ defbtn.addEventListener("change",function(){
 
 <div class="box"><div class="box1"><i class="fas fa-search"></i></div>
 <div id="inside">
-  <p style="font-size: 10px; text-align: center; margin-top: 0px;" ><output  id="searchi" onload="checkm()"></output></p>
+  <p style="font-size: 10px; text-align: center; margin-top: 0px;" ><a id="link" href="email.php">send</a></p>
 </div>
 </div>
 <div class="box" style="margin-top:0px;"><div class="box1"> <i class="fas fa-map-marker-alt"></i></div>
