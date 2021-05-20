@@ -7,7 +7,7 @@ include_once 'header.php';
       <form class="login-form" action="login.inc.php" method="POST">
         
         <input class="user-datas" type="text" name="name" placeholder="Username/Email">
-        <input class="user-datas" type="password" name="pwd" value="<?php echo $_POST['$password']; ?>" placeholder="Password">
+        <input class="user-datas" type="password" name="pwd" placeholder="Password">
         <div class="log-in1">
           <label class="remember-me"><input type="checkbox" name="">Remember me</label>
           <a href="#">Forgot your password?</a>
