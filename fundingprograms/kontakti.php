@@ -15,7 +15,23 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
 crossorigin="anonymous" />
   <title>Contact us</title>
-  
+  <script>
+    function showUser(str) {
+      if (str == "") {
+        document.getElementById("show").innerHTML = "";
+        return;
+      } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("show").innerHTML = this.responseText;
+          }
+        };
+        xmlhttp.open("GET","user.php?q="+str,true);
+        xmlhttp.send();
+      }
+    }
+    </script>
 </head>
 <body onload="askLocation();checkm()">
   <header>
@@ -168,12 +184,23 @@ defbtn.addEventListener("change",function(){
 </div>
 </div>
 <div class="lastpart">
-
-
-<table>
+  <div class="forma">
+    <form>
+    <select name="emplyees" id="options" onchange="showUser(this.value)">
+      <option value="" >Information about our employees</option>
+      <option value="1">Valëza Grainca</option>
+      <option value="2">Rina Jasharaj</option>
+      <option value="3">Riga Dibrani</option>
+    </select>
+</form>
+<br>
+<div id="show"><b>Employee information will show up here...</b></div>
+</div>
+<table id="tabela">
   <tr>
   <td colspan="3" style="font-family:'Lobster',cursive;font-size:22px; color:#333">Get in touch with us!</td>
   </tr>
+  
   <tr>
   <td style=" color:#333"><br/>Phone<br/>
   <p>Phone:+38344111222</p>
