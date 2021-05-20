@@ -1,6 +1,9 @@
 <?php include 'TypeOneCookies.php';
 $Vdata = file_get_contents('TypeOneCookies.php');
 ?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -57,7 +60,15 @@ $Vdata = file_get_contents('TypeOneCookies.php');
         <nav class="account">
           <ul class="nav-l">
             <li class="nav-l-i">
-              <a class="link link_button" href="login.php">Join Us</a>
+            <?php
+                    if(isset($_SESSION["useruid"])) {
+                        echo "<a class='link link_button' href='profile.php'>Profile</a>";
+                        echo '<a class="link link_button" href="logout.inc.php">Log out</a>';
+                    }
+                    else {
+                        echo '<a class="link link_button" href="login.php">Join Us</a>';
+                    }
+                    ?>
             </li>
           </ul>
         </nav>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -60,7 +63,15 @@
             <nav class="account">
               <ul class="nav-l">
                 <li class="nav-l-i">
-                  <a class="link link_button" href="../fundingprograms/login.php">Join Us</a>
+                <?php
+                    if(isset($_SESSION["useruid"])) {
+                        echo "<a class='link link_button' href='../fundingprograms/profile.php'>Profile</a>";
+                        echo '<a class="link link_button" href="../fundingprograms/logout.inc.php">Log out</a>';
+                    }
+                    else {
+                        echo '<a class="link link_button" href="../fundingprograms/login.php">Join Us</a>';
+                    }
+                    ?>
                 </li>
               </ul>
             </nav>
