@@ -81,7 +81,7 @@ body {
   margin-left:700px;
   }
   .lastpart{
-  height:200px;
+  height:460px;
   width:100%;
   background-image:linear-gradient(white,#a0a0a0, #777777);
   }
@@ -322,6 +322,31 @@ margin-left:18px;
 }
 input[type=radio]{
 margin-left:30px;
+}
+#options {
+  width:300px;
+  height:40px;
+  border-radius:10px;
+  font-size: 15px;
+  background-color: darkorange;
+  text-align: center;
+}
+.forma{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-left:650px;
+  
+
+}
+#tabela{
+  margin-top:150px;
+}
+#show{
+  margin-top: 30px;
+  color:#777777;
+  margin-right: 70px;
+  height:10px;
 }
 
   /* ----------------------------------- */
