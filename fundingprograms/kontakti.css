@@ -9,6 +9,11 @@ body {
   margin:0;
   font-family: "Poppins", sans-serif ;
 }
+#link{
+  font-size: 15px;
+  color:white;
+  text-decoration: none;
+}
 
 /* scroll */
 .scrolling-active{
