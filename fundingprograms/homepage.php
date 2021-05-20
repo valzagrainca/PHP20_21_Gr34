@@ -1,3 +1,6 @@
+<?php
+require 'ArrayClasses.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -124,7 +127,57 @@
                 </div> 
 
                 <div class="backi">
-                   <a class="scroll1" href="#aboutus"> <p class="permbajtja_prapa">ABOUT US <i class="fas fa-arrow-circle-down"></i></p> </a>
+                   <a class="scroll1" href="#aboutus"> <p class="permbajtja_prapa">
+                   <?php
+                   $ArrayPrinting = new ArrayDefinement();
+                   $ArrayPrinting->setindexedArray(array("L", "G", "I", "P"));
+                   $ArrayPrinting->getindexedArray();
+                   $i = 0;
+                   $arrLength = count($ArrayPrinting->getindexedArray());
+                   echo "Anetaret e vargut te indeksuar jane: ";
+                   while ($i <  count($ArrayPrinting->getindexedArray())) {;
+                       echo $ArrayPrinting->getindexedArray()[$i]. " ";
+                       $i++;
+                   }
+                   echo "<br>"; echo "Anetaret e vargut revers te indeksuar jane: ";
+                   print_r(array_reverse($ArrayPrinting->getindexedArray()));
+                   echo "<br>"; echo "<br>";
+
+                   $ArrayPrinting1 = new ArrayDefinement();
+                   $ArrayPrinting1->setassociativeArray(array("L" => "Loans", "G" => "Grants", "I" => "Investment", "P" => "Promotions"));
+                   $ArrayPrinting1->getassociativeArray();
+                   echo "Printim i anetareve dhe çelesave: ";
+                   print_r(array_keys($ArrayPrinting1->getassociativeArray()));
+                   echo "<br>"; echo "<br>"; 
+                   
+                   $ArrayPrinting2 = new ArrayDefinement();
+                   $ArrayPrinting2->setrangeArray(range(1, 20));
+                   $ArrayPrinting2->getrangeArray();
+                   echo "Numri i rendomte nga vargu range eshte: ";
+                   print_r(array_rand($ArrayPrinting2->getrangeArray()));
+                   echo "<br>"; echo "<br>";
+                                
+                   $ArrayPrinting3 = new Array2Definement();
+                   $ArrayPrinting3->setmultidimArray(array(
+                       array('K' => "Kontakti"),
+                       array('F' => "FundingPrograms"),
+                       array('T' => "TypeOneCookies")
+                   ));
+                   $ArrayPrinting3->getmultidimArray();
+                   echo "Printimin i nje kolone te vargut multidimensional: "; echo "<br>";
+                   $K = array_column($ArrayPrinting3->getmultidimArray(), 'K');
+                   print_r($K);
+                   echo "<br>"; echo "<br>";
+                   
+                //    $arr = array("xylophone", "piano", "violin");
+                //    sort($arr);
+                //    $clength = count($arr);
+                //    for ($x = 0; $x < $clength; $x++) {
+                //            echo $arr[$x]. ", ";
+                //         }
+                //        echo "<br>"; 
+                   ?>
+                   <i class="fas fa-arrow-circle-down"></i></p> </a>
                 </div>
                 </div>
             </div>
