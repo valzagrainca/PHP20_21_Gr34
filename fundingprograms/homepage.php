@@ -235,22 +235,28 @@ session_start();
                 <div class="title-line">
                     <ul>
                     <li style="list-style-type:none;">
-                        
                         <div class="main-grid">
-                            <div class="video-text">
+                        <div class="video-text">
+                        <?php
+                        $str = "Is your local business not getting the support it deserves?
+                        Have the big companies commercialized the market as much as to throw you out of it?
+                        We want to help you stop that, one step at a time.
+                        Our team guarantees a sufficient support to all the mini entities out there.
+                        We ensure you that your products will be Dis and promoted to an admirable number of customers.";
+                        $pattern = "/dis/i";
+                        echo preg_replace($pattern, "display", $str);
+                        
+                        
+                        ?>     
                     
-                                Is your local business not getting the support it deserves?
-                                Have the big companies commercialized the market as much as to throw you out of it?
-                                We want to help you stop that, one step at a time.
-                                Our team guarantees a sufficient support to all the mini entities out there.
-                                We ensure you that your products will be displayed and promoted to an admirable number of customers.
-                            </div>
+                        </div>
                                 <video class="video1" width="640" height="360" controls>
                                     <source src="images/video.mp4" type="video/mp4">
                                     <source src="images/video.ogg" type="video/ogg">
                                     Your browser does not support the video tag.
                                 </video>
                         </div>
+                        
                         <div class="main-space">
                         
                         </div>
