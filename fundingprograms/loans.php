@@ -83,7 +83,7 @@ $Vdata = file_get_contents('TypeOneCookies.php');
               <button class="open-button" onclick="openForm()">Find Lenders</button>
 
 <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form action="loansform.php" method="POST" class="form-container">
     <h1>Please complete the form below </h1>
     <label for="name"><b>Name</b></label>
     <input type="text" id="name" placeholder="Enter Name" name="name" required>
