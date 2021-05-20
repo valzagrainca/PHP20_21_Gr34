@@ -18,7 +18,7 @@
    <label for="subject" style="color:#333;font-size:15px;"><b>Message</b></label>
    </br>
    <textarea id="subject" name="subject" placeholder="Enter text here.." cols="30" rows="4" ></textarea>
-   <button type="submit" class="btn">Summbit</button>
+   <button type="submit" class="btn">Submit</button>
    </form>
   </div>
                   
