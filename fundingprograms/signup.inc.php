@@ -21,6 +21,10 @@ if(isset($_POST['submit'])){ //if this is set inside the code continue doing wha
         header("Location: signup.php?error=invaliduid");
         exit();
     }
+    if(invalidPwd($pwd)!==false){
+        header("Location: signup.php?error=invalidpwd");
+        exit();
+    }
     if(invalidEmail($email)!==false){
         header("Location: signup.php?error=invalidemail");
         exit();

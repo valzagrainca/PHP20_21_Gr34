@@ -22,6 +22,17 @@ function invalidUid($username){
     return $result;
 }
 
+function invalidPwd($pwd){
+    $result="";
+    if(!preg_match("/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}*$/", $pwd)){
+        $result=true;
+    }
+    else {
+        $result=false;
+    }
+    return $result;
+}
+
 function invalidEmail($email){
     $result="";
     if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
@@ -43,6 +54,8 @@ function pswMatch($pwd,$pwdRepeat){
     }
     return $result;
 }
+
+
 
 function uidExists($conn,$username,$email){
     $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?; ";
