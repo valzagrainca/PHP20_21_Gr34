@@ -55,7 +55,7 @@ if (isset($_POST['login'])) {
       </div>
            
     <div class="form">
-      <form class="login-form" action="" method="POST">
+      <form class="login-form" action="login.inc.php" method="POST">
         
         <input class="user-datas" type="text" name="email" value="<?php echo $email; ?>" placeholder="Email" required autofocus>
         <input class="user-datas" type="password" name="password" value="<?php echo $_POST['$password']; ?>" placeholder="Password" required>
