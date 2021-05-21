@@ -163,8 +163,7 @@ session_start();
     <div class="client">
     <div id="demo">
      <img src="imagesfunding/e.jpg"  >
-     <button type="button" id="boom"onclick="loadimg()" style=" width:500px;
-  height: 400px;>Change Content</button>
+     <button type="button" id="boom"onclick="loadimg()">Change Image</button>
      </div>
      </div>
     </div>
