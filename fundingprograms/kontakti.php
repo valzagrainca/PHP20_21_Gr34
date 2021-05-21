@@ -105,7 +105,15 @@ window.addEventListener('scroll', function () {
 
 
   <div class="lgr1">
-<span>CONTACT US</span>
+  <?php
+  $contact = array("CON"=>"A", "T "=>"C", "TAC"=>"B","US"=>"D");
+  asort($contact);
+  echo "<span>";
+  foreach($contact as $x => $x_value) {
+    echo $x;
+  }
+  echo "</span>";
+  ?>
 <div class="pericon">
  <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-pinterest"></i> </a>
  <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f" style="margin-left:120px;"></i> </a>
