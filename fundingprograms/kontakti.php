@@ -121,7 +121,7 @@ window.addEventListener('scroll', function () {
     <td colspan="3" style="color:#333; ">Write us a few words about your ideas and we will come up with a plan within 24 hours!</td>
     </tr>
     </table>
-    <form action="homepage.php">
+    <form action="kontaktform.php" method="POST">
       <input type="text" id="name" name="name" class="text-box"  placeholder="Your Name" required>
       <input type="email" id="email" name="email" class="text-box" placeholder="Email" required><br/>
       <input type="text" id="company" name="company" class="text-box"  placeholder="Company" required>
