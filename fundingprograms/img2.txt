@@ -2,5 +2,5 @@
 <img src="imagesfunding/ei.jpg" style=" width:500px;
   height: 400px;
   box-shadow:0 20px 30px rgb(0,0,0,.6);">
-<button type="button" id="boom" onclick="loadimg2()">Change Content</button>
+<button type="button" id="boom" onclick="loadimg2()">Change Image</button>
 </div>
