@@ -15,6 +15,7 @@
           <p>Already Registered? <a href="login.php">Sign In</a></p>
           <br>
         </div>
+        
       </form>
       <?php
       if(isset($_GET["error"])){

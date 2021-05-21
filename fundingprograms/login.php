@@ -1,15 +1,19 @@
 <?php 
 include_once 'header.php';
+
 ?> 
 
 
     <div class="form">
       <form class="login-form" action="login.inc.php" method="POST">
         
-        <input class="user-datas" type="text" name="uid" placeholder="Username/Email">
-        <input class="user-datas" type="password" name="pwd" placeholder="Password">
+        <input class="user-datas" type="text" name="uid" placeholder="Username/Email" value="<?php if(isset($_COOKIE
+                ['emailcookie'])){echo $_COOKIE['emailcookie'];} ?>">
+        <input class="user-datas" type="password" name="pwd" placeholder="Password" value="<?php if(isset($_COOKIE
+                ['passwordcookie'])){echo $_COOKIE['passwordcookie'];} ?>">
         <div class="log-in1">
-          <label class="remember-me"><input type="checkbox" name="">Remember me</label>
+          <label class="remember-me"><input type="checkbox" name="remember_checkbox" value="<?php if(isset($_COOKIE
+                ['userlogin'])){echo "checked";} ?>" >Remember me</label>
           <a href="#">Forgot your password?</a>
         </div>
         <!-- <input class="btn" type="submit" name="login" value="LOGIN" onclick="return validation()"> -->

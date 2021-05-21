@@ -45,6 +45,20 @@ function invalidEmail($email){
     return $result;
 }
 
+// function invalidEmail($email){
+//     $result="";
+//     $pattern="[@.]";
+//     $components=preg_split($pattern,$email);
+//     $counter=count($components);
+//     if($counter!=3){
+//         $result=true;
+//     }
+//     else {
+//         $result=false;
+//     }
+//     return $result;
+// }
+
 function pswMatch($pwd,$pwdRepeat){
     $result="";
     if($pwd !== $pwdRepeat){
