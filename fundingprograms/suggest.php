@@ -22,7 +22,7 @@ $email[]="Bora";
 $email[]="Loris";
 $email[]="Besim";
 $email[]="Agon";
-asort($email);
+rsort($email);
 //echo $email[0];
 //get query string
 $q=$_REQUEST['q'];
