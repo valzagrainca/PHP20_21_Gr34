@@ -194,7 +194,15 @@ window.onload = function() {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 317"><path fill="rgb(196, 190, 190)" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,197.3C480,213,600,203,720,165.3C840,128,960,64,1080,58.7C1200,53,1320,107,1380,133.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                   </div>
                   <div class="box7">
-                      <h3>Who gets grants?</h3>
+                      <?php
+                      $grant = array("11"=>"Wh", "13"=>"get","60"=>"?","17"=>"s ","23"=>"gra","12"=>"o ","56"=>"nts");
+                      ksort($grant);
+                      echo"<h3>";
+                      foreach($grant as $x => $x_value) {
+                        echo $x_value;
+                      }
+                      echo"</h3>";
+                      ?>
                       <p>
                       <?php
                       // Funksion pa parametra qe ben printimin e shprehjes
