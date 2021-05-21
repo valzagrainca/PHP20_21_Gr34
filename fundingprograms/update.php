@@ -112,7 +112,7 @@ if(isset($_POST['edit'])){
 	$email = $_POST['email'];
 	$post=$_POST['posti'];
 	
-	$updateQuery = "UPDATE employee SET Emri='$emri', Mbiemri='$mbiemri', Email='$email',Post='$post'
+	$updateQuery = "UPDATE employees SET Emri='$emri', Mbiemri='$mbiemri', Email='$email',Post='$post'
 					WHERE Id = $id";
 	$updateResult = mysqli_query($conn, $updateQuery);
 	if(!$updateQuery){
