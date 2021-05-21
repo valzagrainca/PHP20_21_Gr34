@@ -11,7 +11,7 @@ if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Address)||!empty($Nu
   $host="localhost";
   $dbUsername="root";
   $dbPassword="";
-  $dbname="Products";
+  $dbname="products";
 
   try{
     $conn=new mysqli($host,$dbUsername,$dbPassword,$dbname);
