@@ -3,11 +3,11 @@
 
 if(isset($_POST['submit'])){ //if this is set inside the code continue doing whatever u r doing
 
-    $name = $_POST['name'];
-	$email = $_POST['email'];
-    $username = $_POST['uid'];
-    $pwd = $_POST['pwd'];
-	$pwdRepeat =$_POST['pwdrepeat'];
+    $name = mysqli_real_escape_string($conn,$_POST['name']);
+	$email = mysqli_real_escape_string($conn,$_POST['email']);
+    $username = mysqli_real_escape_string($conn,$_POST['uid']);
+    $pwd = mysqli_real_escape_string($conn,$_POST['pwd']);
+	$pwdRepeat = mysqli_real_escape_string($conn,$_POST['pwdrepeat']);
 
 
     require_once 'dbh.inc.php';
