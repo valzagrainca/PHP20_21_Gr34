@@ -71,14 +71,14 @@ input[type=text]{
 $host="localhost";
 $dbUsername="root";
 $dbPassword="";
-$dbname="employees";
+$dbname="employee";
 $conn=mysqli_connect($host,$dbUsername,$dbPassword,$dbname);
 if (!$conn) {
  die('Could not connect: ' . mysqli_error($con));
 }
 
 $id = intval($_GET['Id']);
-$selectQuery = "SELECT * FROM employee WHERE Id = ".$id;
+$selectQuery = "SELECT * FROM employees WHERE Id = ".$id;
 $selectResult = mysqli_query($conn, $selectQuery);
 if(!$selectResult){
 	die("Nuk mund te merren te dhenat nga tabela");
