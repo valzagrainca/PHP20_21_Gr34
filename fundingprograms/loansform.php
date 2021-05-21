@@ -10,7 +10,7 @@ if(!empty($Name)||!empty($Surname)||!empty($Email)||!empty($Number)||!empty($Goa
   $host="localhost";
   $dbUsername="root";
   $dbPassword="";
-  $dbname="funding";
+  $dbname="fundingp";
 
   $conn=new mysqli($host,$dbUsername,$dbPassword,$dbname);
   if(mysqli_connect_error()){
