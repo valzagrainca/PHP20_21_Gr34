@@ -57,6 +57,7 @@ if(mysqli_num_rows($result) > 0){
 			<th>Mbiemri</th>
 			<th id='gjat'>Email</th>
 			<th>Post</th>
+      <th>Update</th>
 		</tr>";
 		
 	while($row = mysqli_fetch_assoc($result)){
@@ -66,6 +67,7 @@ if(mysqli_num_rows($result) > 0){
 				<td id='bo'>".$row['Mbiemri']."</td>
 				<td id='gjat1'>".$row['Email']."</td>
 				<td id='bo'>".$row['Post']."</td>
+        <td id='bo'><a style='text-decoration:none;color:black;' href='update.php?Id=".$row['Id']."'>Edito</a></td>
 			</tr>";
 	}
 	echo "</table>";
