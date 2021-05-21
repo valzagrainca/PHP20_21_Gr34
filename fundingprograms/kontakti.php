@@ -133,7 +133,7 @@ window.addEventListener('scroll', function () {
       <input type="text" id="name" name="name" class="text-box"  placeholder="Your Name" required>
       <input type="email" id="email" name="email" class="text-box" placeholder="Email" required><br/>
       <input type="text" id="company" name="company" class="text-box"  placeholder="Company" required>
-      <input type="text" id="budget" name="number" class="text-box" placeholder="Budget" required><br/>
+      <input type="text" id="budget" name="budget" class="text-box" placeholder="Budget" required><br/>
 <textarea name="details" placeholder="Project details (optional)"></textarea>
 <label for="" id="perlabel">Are you investor or a client?</label><br/>
 <input type="radio" id="client" name="person" value="client">
