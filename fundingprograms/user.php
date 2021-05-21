@@ -38,12 +38,12 @@
  $host="localhost";
  $dbUsername="root";
  $dbPassword="";
- $dbname="employees";
+ $dbname="employee";
 $conn=mysqli_connect($host,$dbUsername,$dbPassword,$dbname);
 if (!$conn) {
   die('Could not connect: ' . mysqli_error($con));
 }
-$sql="SELECT * FROM employee WHERE Id = '".$q."'";
+$sql="SELECT * FROM employees WHERE Id = '".$q."'";
 $result = mysqli_query($conn,$sql);
 if( !$result ){
 	die("Can't load datas" . mysqli_error($conn));
