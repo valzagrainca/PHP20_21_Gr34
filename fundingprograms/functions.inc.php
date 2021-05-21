@@ -130,6 +130,7 @@ function loginUser($conn, $username, $pwd) {
         //create session variables
         $_SESSION["userid"] = $uidExists["usersId"];
         $_SESSION["useruid"] = $uidExists["usersUid"];
+		$_SESSION["username"]=$uidExists["usersName"];
         header("Location: homepage.php");
         exit();
     }
