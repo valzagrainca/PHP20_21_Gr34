@@ -7,6 +7,36 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.client{
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-left:500px;
+}
+.client h3{
+  font-size: 30px;
+  margin-left: 140px;
+}
+.client img{
+  width:500px;
+  height: 500px;
+  box-shadow:0 20px 30px rgb(0,0,0,.6);
+}
+.client button{
+  position:absolute;
+  left:600px;
+  top:300px;
+  width:200px;
+  height:50px;
+  font-size:17px;
+  box-shadow:0 20px 30px rgb(0,0,0,.6);
+  border-radius: 30px;
+  background-color:#BEBEBE;
+
+}
+.client button:hover{
+  background-color: darkgrey;
+}
 
 .section1 {
   position: relative;
