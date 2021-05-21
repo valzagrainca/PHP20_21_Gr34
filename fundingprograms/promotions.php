@@ -143,16 +143,29 @@ session_start();
         this.responseText;
         }
     };
-    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.open("GET", "img2.txt", true);
+    xhttp.send();
+    }
+    function loadimg2() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =
+        this.responseText;
+        }
+    };
+    xhttp.open("GET", "img3.txt", true);
     xhttp.send();
     }
     </script>
     <div class="this">
         <h3>Happy Clients</h3>
     <div class="client">
-     <img src="imagesfunding/3d.png" >
+    <div id="demo">
+     <img src="imagesfunding/e.jpg"  >
+     <button type="button" id="boom"onclick="loadimg()">Change Content</button>
      </div>
-    <button type="button" id="boom"onclick="loadimg()">Change Content</button>
+     </div>
     </div>
 </body>
 
