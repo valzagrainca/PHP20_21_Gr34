@@ -209,8 +209,68 @@ session_start();
                 <span class="b">B</span><span class="pa">PA</span> </div>
             </div>
         <div class="hyrja"> <div style="font-size: 16px;" id="aboutus">
-        <br>As we merge imagination and technology to help brands grow in an age of digital transformation, we'll help you realise your 
-                                potential, reimagine your costumer experience and reinvent your future - fast.
+        <form method = "post">
+        <label for = "read"><i>Lexo nga file</i></label>
+        <input type = "submit" name = "read" value = "Go"><br>
+        <label for = "fname"><i>Shkruaj ne file</i></label>
+        <input type = "text" name = "fname"> 
+        <input type = "submit" name = "write" value = "Go"><br><br>
+      </form>
+
+      <?php
+      function errorHandling ($error_level, $error_message) {
+          echo "Error number [$error_level] [$error_message]"; echo "<br>";
+          echo "Execution will now end. ";
+          die();
+        }
+        set_error_handler("errorHandling");
+
+        if(isset($_POST['read'])){
+            $fileName = "Content.txt";
+            $file = fopen($fileName, "r");
+
+            if($file == false) {
+                echo "Error in opening file";
+                exit();
+            }
+
+            $fileSize = filesize($fileName);
+            $fileText = fread($file, $fileSize);
+
+            fclose($file);
+
+            echo "<pre>Emri i file-it: ".$fileName."</pre>";
+            echo "<pre>Permbajtja e file-it: ".$fileText."</pre>";
+            echo "<pre>"."Madhesia e file-it ne bytes: ".$fileSize."</pre>";
+        }
+
+        if(isset($_POST['write'])){
+            // psh nese $teksti = $_POST['tekst']; zbatohet error_handler^
+            $fileText1 = $_POST['fname'];
+            $fileName1 = "Content.txt";
+            $file1 = fopen($fileName1, "w");
+
+            if($file1 == false) {
+                echo "Error in opening file";
+                exit();
+            }
+
+            fwrite($file1, $fileText1);
+            $fileSize1 = filesize($fileName1);
+
+            echo "<pre>Emri i file-it: ".$fileName1."</pre>";
+            echo "<pre>Permbajtja e file-it: ".$fileText1."</pre>";
+            echo "<pre>"."Madhesia e file-it ne bytes: ".$fileSize1."</pre>";
+
+            fclose($file1);
+        }
+        // error_reporting(E_ALL);
+        // ini_set('ignore_repeated_errors', TRUE);
+        // ini_set('display_errors', 0);
+        // ini_set('display_startup_errors', 0);
+        // ini_set('log_errors', TRUE);
+        // ini_set('error_log', 'errors.txt');
+        ?>
         </div></div>
         <div class="bpa"></div><svg width="415px" height="240px" class="bpa-svg2">
             <rect width="415px" height="240px" style="fill:transparent;stroke-width:10;stroke:#d88e2c;" />
