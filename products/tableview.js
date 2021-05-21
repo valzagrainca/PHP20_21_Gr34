@@ -20,12 +20,12 @@ var art = {
 
 var food = {
     "products": [
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina"),
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina"),
-        new Product("Pite", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina")
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "Coloring Prishtina", "CULTURE", "Prishtina"),
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina"),
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina"),
+        new Product("Vizatimi", "50\u20ac", "../Images/abstract2.jpg", "2cm Humans", "CULTURE", "Prishtina")
       ]
 }
 
