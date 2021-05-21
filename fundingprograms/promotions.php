@@ -134,6 +134,26 @@ session_start();
             
         </div>
     </section>
+    <script>
+    function loadimg() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =
+        this.responseText;
+        }
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send();
+    }
+    </script>
+    <div class="this">
+        <h3>Happy Clients</h3>
+    <div class="client">
+     <img src="imagesfunding/3d.png" >
+     </div>
+    <button type="button" id="boom"onclick="loadimg()">Change Content</button>
+    </div>
 </body>
 
 </html>
